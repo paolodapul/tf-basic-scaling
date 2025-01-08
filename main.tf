@@ -4,6 +4,7 @@
 # `aws_vpc` is the resource type
 # `main` is the resource name
 
+# Why is there a separate config for enable_dns_support and enable_dns_hostnames?
 resource "aws_vpc" "main" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_support   = true
